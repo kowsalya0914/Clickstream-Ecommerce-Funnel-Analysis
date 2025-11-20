@@ -18,11 +18,8 @@ Unifying session identifiers
 Merged all datasets into a structured format suitable for funnel modeling.
 
 3. Tools Used
-
 Python (Pandas, NumPy)
-
 Power BI
-
 Excel / CSV data exploration
 
 4. Key Learnings
