@@ -36,3 +36,50 @@ Product views
 Add-to-cart rate
 Checkout conversions
 Design dashboards and interactive visuals
+
+Week 2 – Data Modelling & Basic Funnel Visualization
+
+Objective
+Design the star schema, create base DAX measures, and build the initial funnel dashboard.
+
+Tasks Completed
+1️. Built Star Schema
+Created and validated table relationships:
+fEvents → dSessions
+fOrders → dCustomers
+fOrderItems → dProducts
+fOrders → fOrderItems
+fOrders → dDate
+
+Ensured correct cardinality and filter directions.
+
+2️. Created Base DAX Measures
+Sessions = DISTINCTCOUNT(fEvents[SessionID])
+Orders = DISTINCTCOUNT(fOrders[OrderID])
+Conversion Rate % = DIVIDE([Orders], [Sessions], 0)
+
+These measures power funnel KPIs.
+
+3️. Built Funnel Visualization
+Tracked journey stages:
+Homepage visits
+Product page visits
+Add-to-cart
+Checkout
+Purchase
+
+Used Funnel visual for drop-off visualization.
+
+4️. Added KPI Cards
+Total Sessions
+Total Orders
+
+Conversion Rate %
+
+5️. Added Interactive Slicers
+Device Type
+Traffic Source
+Date
+
+Output
+A fully working basic dashboard that visualizes user behavior flow and drop-offs.
